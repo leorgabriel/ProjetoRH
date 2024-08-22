@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Pessoas</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+     
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+       
+        header {
+            background-color: #003d66; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #00509e; 
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+       
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        section {
+            background-color: #e6f7ff; 
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #00509e; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #003d66; 
+        }
+
+        
+        footer {
+            background-color: #003d66; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 3px solid #00509e; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gestão de Pessoas</h1>
+        <nav>
+            <ul>
+                <li><a href="/funcionarios/">Funcionários</a></li>
+                <li><a href="/departamentos/">Departamentos</a></li>
+                <li><a href="/projetos/">Projetos</a></li>
+                <li><a href="/beneficios/">Benefícios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="funcionarios">
+            <h2>Funcionários</h2>
+            <p>Visualize os detalhes dos funcionários da empresa.</p>
+            <button onclick="window.location.href='/funcionarios/'">Visualizar Funcionários</button>
+        </section>
+        <section id="departamentos">
+            <h2>Departamentos</h2>
+            <p>Veja os departamentos que compõem a empresa.</p>
+            <button onclick="window.location.href='/departamentos/'">Visualizar Departamentos</button>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p>Gerencie os projetos e seus detalhes.</p>
+            <button onclick="window.location.href='/projetos/'">Visualizar Projetos</button>
+        </section>
+        <section id="beneficios">
+            <h2>Benefícios</h2>
+            <p>Veja os benefícios oferecidos aos funcionários.</p>
+            <button onclick="window.location.href='/beneficios/'">Visualizar Benefícios</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Leonardo R. Gabriel</p>
+    </footer>
+</body>
+</html>
